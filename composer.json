@@ -2,9 +2,7 @@
     "name": "josscoder/ultra-citizens",
     "type": "pocketmine-plugin",
     "autoload": {
-        "psr-4": {
-            "UltraCitizens\\": "/"
-        }
+        "classmap": ["src"]
     },
     "authors": [
         {
@@ -12,9 +10,13 @@
             "email": "josscoder@hotmail.com"
         }
     ],
-    "minimum-stability": "dev",
-    "require": {},
     "require-dev": {
         "pocketmine/pocketmine-mp": "dev-stable"
+    },
+    "extra": {
+        "virion": {
+            "spec": "3.0",
+            "namespace-root": "UltraCitizens\\"
+        }
     }
 }
