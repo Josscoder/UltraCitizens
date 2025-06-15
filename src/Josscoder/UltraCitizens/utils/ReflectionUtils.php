@@ -1,6 +1,6 @@
 <?php
 
-namespace UltraCitizens\utils;
+namespace Josscoder\UltraCitizens\utils;
 
 use pocketmine\nbt\tag\CompoundTag;
 use pocketmine\nbt\tag\ListTag;

@@ -1,6 +1,6 @@
 <?php
 
-namespace UltraCitizens\impl\tag;
+namespace Josscoder\UltraCitizens\impl\tag;
 
 use Closure;
 use pocketmine\network\mcpe\protocol\types\entity\EntityMetadataProperties;

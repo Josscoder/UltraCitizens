@@ -1,9 +1,9 @@
 <?php
 
-namespace UltraCitizens\registries;
+namespace Josscoder\UltraCitizens\registries;
 
-use UltraCitizens\impl\Citizen;
-use UltraCitizens\impl\TagAbleCitizen;
+use Josscoder\UltraCitizens\impl\Citizen;
+use Josscoder\UltraCitizens\impl\TagAbleCitizen;
 use pocketmine\utils\SingletonTrait;
 use pocketmine\world\World;
 

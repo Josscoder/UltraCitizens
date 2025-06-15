@@ -1,8 +1,8 @@
 <?php
 
-namespace UltraCitizens;
+namespace Josscoder\UltraCitizens;
 
-use UltraCitizens\listeners\CitizenListener;
+use Josscoder\UltraCitizens\listeners\CitizenListener;
 use InvalidArgumentException;
 use pocketmine\plugin\PluginBase;
 

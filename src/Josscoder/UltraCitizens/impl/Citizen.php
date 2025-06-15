@@ -1,9 +1,9 @@
 <?php
 
-namespace UltraCitizens\impl;
+namespace Josscoder\UltraCitizens\impl;
 
-use UltraCitizens\config\Attributes;
-use UltraCitizens\registries\ViewerRegistry;
+use Josscoder\UltraCitizens\config\Attributes;
+use Josscoder\UltraCitizens\registries\ViewerRegistry;
 use pocketmine\entity\Entity;
 use pocketmine\network\mcpe\protocol\AddActorPacket;
 use pocketmine\network\mcpe\protocol\RemoveActorPacket;

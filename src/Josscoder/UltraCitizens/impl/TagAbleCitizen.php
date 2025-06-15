@@ -1,9 +1,9 @@
 <?php
 
-namespace UltraCitizens\impl;
+namespace Josscoder\UltraCitizens\impl;
 
-use UltraCitizens\config\Attributes;
-use UltraCitizens\config\TagEditor;
+use Josscoder\UltraCitizens\config\Attributes;
+use Josscoder\UltraCitizens\config\TagEditor;
 use pocketmine\player\Player;
 
 class TagAbleCitizen extends Citizen

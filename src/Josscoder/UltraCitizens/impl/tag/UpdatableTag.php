@@ -1,9 +1,9 @@
 <?php
 
-namespace UltraCitizens\impl\tag;
+namespace Josscoder\UltraCitizens\impl\tag;
 
 use Closure;
-use UltraCitizens\UltraCitizens;
+use Josscoder\UltraCitizens\UltraCitizens;
 use pocketmine\scheduler\ClosureTask;
 
 class UpdatableTag extends PlaceholderTag

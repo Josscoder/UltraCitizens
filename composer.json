@@ -2,7 +2,9 @@
     "name": "josscoder/ultra-citizens",
     "type": "pocketmine-plugin",
     "autoload": {
-        "classmap": ["src"]
+        "psr-4": {
+            "Josscoder\\UltraCitizens\\": ["src/Josscoder/UltraCitizens/"]
+        }
     },
     "authors": [
         {
@@ -16,7 +18,7 @@
     "extra": {
         "virion": {
             "spec": "3.0",
-            "namespace-root": "UltraCitizens\\"
+            "namespace-root": "Josscoder\\UltraCitizens"
         }
     }
 }

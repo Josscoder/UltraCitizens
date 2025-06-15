@@ -1,9 +1,9 @@
 <?php
 
-namespace UltraCitizens\config;
+namespace Josscoder\UltraCitizens\config;
 
-use UltraCitizens\impl\tag\Tag;
-use UltraCitizens\impl\Citizen;
+use Josscoder\UltraCitizens\impl\tag\Tag;
+use Josscoder\UltraCitizens\impl\Citizen;
 use pocketmine\entity\Location;
 
 class TagEditor

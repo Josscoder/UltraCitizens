@@ -1,9 +1,9 @@
 <?php
 
-namespace UltraCitizens\listeners;
+namespace Josscoder\UltraCitizens\listeners;
 
-use UltraCitizens\UltraCitizens;
-use UltraCitizens\registries\CitizenRegistry;
+use Josscoder\UltraCitizens\UltraCitizens;
+use Josscoder\UltraCitizens\registries\CitizenRegistry;
 use pocketmine\event\entity\EntityTeleportEvent;
 use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerJoinEvent;

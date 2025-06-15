@@ -1,9 +1,9 @@
 <?php
 
-namespace UltraCitizens\config;
+namespace Josscoder\UltraCitizens\config;
 
 use Closure;
-use UltraCitizens\utils\ReflectionUtils;
+use Josscoder\UltraCitizens\utils\ReflectionUtils;
 use pocketmine\entity\Location;
 use pocketmine\network\mcpe\protocol\types\entity\EntityIds;
 use pocketmine\player\Player;

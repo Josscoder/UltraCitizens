@@ -1,6 +1,6 @@
 <?php
 
-namespace UltraCitizens\impl;
+namespace Josscoder\UltraCitizens\impl;
 
 use pocketmine\player\Player;
 

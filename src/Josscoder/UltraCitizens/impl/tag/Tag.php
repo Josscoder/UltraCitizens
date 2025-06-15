@@ -1,9 +1,9 @@
 <?php
 
-namespace UltraCitizens\impl\tag;
+namespace Josscoder\UltraCitizens\impl\tag;
 
-use UltraCitizens\config\Attributes;
-use UltraCitizens\impl\Citizen;
+use Josscoder\UltraCitizens\config\Attributes;
+use Josscoder\UltraCitizens\impl\Citizen;
 use pocketmine\network\mcpe\protocol\types\entity\EntityIds;
 
 abstract class Tag extends Citizen

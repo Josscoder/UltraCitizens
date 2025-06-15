@@ -1,6 +1,6 @@
 <?php
 
-namespace UltraCitizens\registries;
+namespace Josscoder\UltraCitizens\registries;
 
 use Closure;
 use pocketmine\player\Player;
