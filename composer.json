@@ -15,8 +15,6 @@
     "minimum-stability": "dev",
     "require": {},
     "require-dev": {
-        "pocketmine/pocketmine-mp": "dev-stable",
-        "sof3/pharynx": "dev-master",
-        "phpstan/phpstan": "1.12.7"
+        "pocketmine/pocketmine-mp": "dev-stable"
     }
 }
