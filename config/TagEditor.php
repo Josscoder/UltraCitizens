@@ -8,7 +8,7 @@ use pocketmine\entity\Location;
 
 class TagEditor
 {
-    const ONE_BREAK_LINE = 0.32;
+    const float ONE_BREAK_LINE = 0.32;
 
     private float $height = 1.8;
 
