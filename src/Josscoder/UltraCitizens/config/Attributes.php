@@ -6,6 +6,7 @@ use Closure;
 use Josscoder\UltraCitizens\utils\ReflectionUtils;
 use pocketmine\entity\Location;
 use pocketmine\network\mcpe\protocol\types\entity\EntityIds;
+use pocketmine\network\mcpe\protocol\types\inventory\UseItemOnEntityTransactionData;
 use pocketmine\player\Player;
 use pocketmine\utils\Utils;
 
@@ -101,7 +102,7 @@ class Attributes
 
     public function setOnClick(?Closure $onClick): self
     {
-        Utils::validateCallableSignature(function (Player $player): void {}, $onClick);
+        Utils::validateCallableSignature(function (Player $player, UseItemOnEntityTransactionData $data): void {}, $onClick);
 
         $this->onClick = $onClick;
 

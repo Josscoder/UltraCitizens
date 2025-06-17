@@ -109,6 +109,6 @@ class CitizenListener implements Listener
             return;
         }
 
-        $onClick($event->getOrigin()->getPlayer());
+        $onClick($event->getOrigin()->getPlayer(), $data);
     }
 }
