@@ -3,7 +3,6 @@
 namespace Josscoder\UltraCitizens\config;
 
 use Closure;
-use Josscoder\UltraCitizens\utils\ReflectionUtils;
 use pocketmine\entity\Location;
 use pocketmine\network\mcpe\protocol\types\entity\EntityIds;
 use pocketmine\network\mcpe\protocol\types\inventory\UseItemOnEntityTransactionData;
@@ -53,8 +52,6 @@ class Attributes
     public function setCustomEntity(bool $customEntity = true): self
     {
         $this->customEntity = $customEntity;
-
-        ReflectionUtils::updateStaticPacketCache($this->networkId, $this->networkId);
 
         return $this;
     }

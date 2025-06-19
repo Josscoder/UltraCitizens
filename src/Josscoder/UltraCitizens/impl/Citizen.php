@@ -4,6 +4,7 @@ namespace Josscoder\UltraCitizens\impl;
 
 use Josscoder\UltraCitizens\config\Attributes;
 use Josscoder\UltraCitizens\registries\ViewerRegistry;
+use Josscoder\UltraCitizens\utils\ReflectionUtils;
 use pocketmine\entity\Entity;
 use pocketmine\network\mcpe\protocol\AddActorPacket;
 use pocketmine\network\mcpe\protocol\RemoveActorPacket;
@@ -26,6 +27,12 @@ class Citizen implements ICitizen
     public function __construct(
         private readonly Attributes $attributes
     ) {
+        if ($this->attributes->isCustomEntity()) {
+            $networkId = $this->attributes->getNetworkId();
+
+            ReflectionUtils::updateStaticPacketCache($networkId, $networkId);
+        }
+
         $this->actorId = Entity::nextRuntimeId();
 
         $this->viewerRegistry = new ViewerRegistry();
