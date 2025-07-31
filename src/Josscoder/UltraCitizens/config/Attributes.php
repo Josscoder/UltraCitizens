@@ -17,6 +17,8 @@ class Attributes
 
     private int $variant = -1;
 
+    private int $markVariant = -1;
+
     private ?Location $location = null;
 
     private float $scale = 1.0;
@@ -64,6 +66,18 @@ class Attributes
     public function setVariant(int $variant): self
     {
         $this->variant = $variant;
+
+        return $this;
+    }
+
+    public function getMarkVariant(): int
+    {
+        return $this->markVariant;
+    }
+
+    public function setMarkVariant(int $markVariant): self
+    {
+        $this->markVariant = $markVariant;
 
         return $this;
     }
