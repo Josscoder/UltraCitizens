@@ -82,6 +82,11 @@ class Citizen implements ICitizen
             $metadata[EntityMetadataProperties::VARIANT] = new IntMetadataProperty($variant);
         }
 
+        $markVariant = $this->attributes->getMarkVariant();
+        if ($markVariant != -1) {
+            $metadata[EntityMetadataProperties::MARK_VARIANT] = new IntMetadataProperty($markVariant);
+        }
+
         return $metadata;
     }
 
@@ -176,5 +181,33 @@ class Citizen implements ICitizen
             new PropertySyncData([], []),
             0
         ));
+    }
+
+    public function updateVariantForPlayer(int $newVariant, Player $player): void
+    {
+        $metadata[EntityMetadataProperties::VARIANT] = new IntMetadataProperty($newVariant);
+        $this->updateMetadataForPlayer($metadata, $player);
+    }
+
+    public function updateVariant(int $newVariant): void
+    {
+        $metadata[EntityMetadataProperties::VARIANT] = new IntMetadataProperty($newVariant);
+        $this->updateMetadata($metadata);
+
+        $this->attributes->setVariant($newVariant);
+    }
+
+    public function updateMarkVariantForPlayer(int $newMarkVariant, Player $player): void
+    {
+        $metadata[EntityMetadataProperties::MARK_VARIANT] = new IntMetadataProperty($newMarkVariant);
+        $this->updateMetadataForPlayer($metadata, $player);
+    }
+
+    public function updateMarkVariant(int $newMarkVariant): void
+    {
+        $metadata[EntityMetadataProperties::MARK_VARIANT] = new IntMetadataProperty($newMarkVariant);
+        $this->updateMetadata($metadata);
+
+        $this->attributes->setMarkVariant($newMarkVariant);
     }
 }
