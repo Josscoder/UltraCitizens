@@ -107,7 +107,7 @@ class Citizen implements ICitizen
             $location->getPitch(),
             $location->getYaw(),
             $location->getYaw(),
-            0,
+            $location->getYaw(),
             [],
             $metadata,
             new PropertySyncData([], []),
